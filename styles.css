@@ -1,0 +1,85 @@
+body {
+    text-align: center;
+    background-color: #eeeeee;
+}
+
+h1 {
+    font-family: Monoton;
+    font-size: 70px;
+    margin: 0.2em;
+}
+
+h2 {
+    margin: 1em 0 0.25em;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    box-shadow: 5px 5px 3px grey;
+    cursor: crosshair;
+}
+
+tr {
+    height: 20px;
+    border: 1px dashed grey;
+}
+
+td {
+    width: 200px;
+    border: 1px dashed grey;
+}
+
+#myCanvas {
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    box-shadow: 5px 5px 3px grey;
+}
+
+input[type=number] {
+    width: 6em;
+}
+
+#slideContainer {
+    width: 50%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #4caf50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4caf50;
+    cursor: pointer;
+}
+
+span {
+        visibility: hidden;
+}

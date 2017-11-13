@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    <h1>Lab: Pixel Art Maker</h1>
+
+    <h2>Choose Grid Size</h2>
+    <form id="sizePicker">
+        Grid Height:
+        <input type="number" id="input_height" name="height" min="1" value="16">
+        Grid Width:
+        <input type="number" id="input_width" name="width" min="1" value="16">
+        <input type="submit" onclick="return false">
+    </form>
+
+    <h2>Grid Zoom level</h2>
+    <input type="range" min="1" max="40" value="20" id="slideContainer">
+
+    <h2>Pick A Color</h2>
+    <input type="color" id="colorPicker">
+
+    <h2>Design Canvas</h2><span>Right click any pixel to use its color.</span>
+    <table id="pixel_canvas" oncontextmenu="return false" draggable="false"><tr><td>Choose grid size, pick background color and click submit to begin.</td></tr></table>
+
+    <h2>Preview</h2>
+    <canvas id="myCanvas" width="0" height="0"></canvas><span>  Right click to save image.</span><br>
+    <h6>My Pixel Art Project. 2017 Jarvis Smith</h6>
+    <script src="designs.js"></script>
+</body>
+</html>

@@ -81,5 +81,9 @@ input[type=number] {
 }
 
 span {
-        visibility: hidden;
+    visibility: hidden;
+}
+
+#clear_color {
+    visibility: hidden;
 }

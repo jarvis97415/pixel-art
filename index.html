@@ -17,7 +17,7 @@
         <input type="number" id="input_height" name="height" min="1" value="16">
         Grid Width:
         <input type="number" id="input_width" name="width" min="1" value="16">
-        <input type="submit" onclick="return false">
+        <input type="submit" id="submit_button" onclick="return false">
     </form>
 
     <h2>Grid Zoom level</h2>
@@ -25,9 +25,11 @@
 
     <h2>Pick A Color</h2>
     <input type="color" id="colorPicker">
+    <br>
+    <input type="button" id="clear_color" value="Clear Canvas">
 
     <h2>Design Canvas</h2><span>Right click any pixel to use its color.</span>
-    <table id="pixel_canvas" oncontextmenu="return false" draggable="false"><tr><td>Choose grid size, pick background color and click submit to begin.</td></tr></table>
+    <table id="pixel_canvas" oncontextmenu="return false" draggable="false"><tr><td>Choose grid size and click submit to begin.</td></tr></table>
 
     <h2>Preview</h2>
     <canvas id="myCanvas" width="0" height="0"></canvas><span>  Right click to save image.</span><br>

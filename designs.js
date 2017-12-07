@@ -69,8 +69,11 @@ $('#clear_color').click(function(){
     gridzoom = $('#slideContainer').val();
     $('tr').css('height', gridzoom + 'px');
     $('td').css('width', gridzoom + 'px');
+    //Make sure we have pxcolor set from color picker
+    pxcolor = $('#colorPicker').val();
     //Set all tr and td elements to pxcolor
     $('tr, td').css('backgroundColor', pxcolor);
+    console.log(pxcolor);
     //Fill preview canvas with pxcolor
     ctx.fillStyle = pxcolor;
     ctx.fillRect(0, 0, gridwidth, gridheight);
